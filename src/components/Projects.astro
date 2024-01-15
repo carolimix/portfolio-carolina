@@ -1,10 +1,11 @@
 ---
 import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
+import Javascript from "./icons/Javascript.astro";
 
 const TAGS = {
   NEXT: {
-    name: "Meet Me in the Middle",
+    name: "Next.js",
     class: "bg-black text-white",
     icon: NextJS,
   },
@@ -13,16 +14,22 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-[#f7df1e] text-black",
+    icon: Javascript,
+  },
 };
 const PROJECTS = [
   {
-    title: "Remoting - A finder of places in Berlin for remote work",
+    title:
+      "Meet me in the middle - A great map that finds a middlepoint between two places",
     description:
       "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
   },
 ];
 ---
